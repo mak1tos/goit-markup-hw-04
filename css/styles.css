@@ -31,6 +31,8 @@ ul {
 }
 
 .section{
+    max-width: 1600px;
+    margin: 0 auto;
     padding: 94px 0;
 }
 
@@ -58,13 +60,13 @@ ul {
 /* ------------------------Шапка------------------------------ */
 
 .section-header{
+    max-width: 1600px;
+    margin: 0 auto;
     border-bottom: 1px;
-       
     background-color: var(--white);
 }
 
 .logo{
-
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -85,7 +87,7 @@ ul {
     color: #FFF;
 }
 
-/* Навигация */
+/* ----------------Навигация-------------------- */
 
 .main-nav{
     display: flex;
@@ -207,13 +209,39 @@ ul {
 
 /* ---------------------Подвал----------------- */
 
+.nav-footer{
+    display: flex;
+    /* justify-content: center */
+}
+
 .address{
     margin-top: 20px;
 }
 
+.join-social-link{
+    margin-top: ;
+    margin-left: 70px;
+}
+
+.join{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
 .footer-section{
+    max-width: 1600px;
+    margin: 0 auto;
     padding-top: 60px;
     padding-bottom: 60px;
+    width: 1600px;
+    height: 252px;
 
     background-color: var(--banner);
 }
@@ -241,6 +269,42 @@ ul {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--white)
+}
+
+.footer-social-list{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social-item{
+    width: 44px;
+    height: 44px;
+}
+
+.footer-social-item + .footer-social-item{
+    margin-left: 10px;
+}
+
+.footer-social-link{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(255, 255, 255, 0.1);;
+    color: var(--white);
+}
+
+.footer-social-icon{
+    fill: currentColor;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: var(--blue);
+    color: var(--white);
 }
 
 /* -------------------------------Hero------------------------ */
@@ -274,6 +338,8 @@ ul {
 /* --------------------------Наши преимущества--------------------- */
 
 .features-section{
+    max-width: 1600px;
+    margin: 0 auto;
     padding-bottom: 0;
 }
 
@@ -343,8 +409,13 @@ ul {
 
 /* -------------------------Наша деятельность------------------------ */
 
+/* .section .work-section{
+    max-width: 1600px;
+    margin: 0 auto;
+} */
 
 .work-section .section-title{
+    
     padding-top: 0;
 }
 
@@ -452,25 +523,38 @@ ul {
 
 /* ------------------Постоянные клиенты------------ */
 
-.clients-list{
+.clients-social-list{
     display: flex;
-
-    padding: 0;
-    margin: 0;
-    background-color: aqua;
-    border: #161618;
-    list-style: none;
+    justify-content: center;
 }
 
-.client{
-    width: 106px;
-    height: 60px;
-    fill: #2196F3;
-}
-
-.client-icon{
+.client-social-item{
     width: 170px;
     height: 92px;
+}
+
+.client-social-item + .client-social-item{
+    margin-left: 30px;
+}
+
+.client-social-link{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    color: #afb1b8;
+    border: 1px solid #AFB1B8;
+}
+
+.client-social-icon{
+    fill: currentColor;
+}
+
+.client-social-link:hover,
+.client-social-link:focus {
+    color: var(--blue);
 }
 
 /* ---------------------Портфолио----------------- */
