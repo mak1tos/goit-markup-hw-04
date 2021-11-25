@@ -137,6 +137,7 @@ ul {
 }
 
 .contact-nav-link{
+    align-items: center;
     padding: 32px 0;
     display: flex;
  
@@ -156,7 +157,8 @@ ul {
     fill: currentColor;
 }
 
-.contact-nav-link:hover{
+.contact-nav-link:hover,
+.contact-nav-link:focus{
     color: var(--blue);
 }
 
@@ -232,12 +234,8 @@ ul {
 }
 
 .footer-section{
-    max-width: 1600px;
-    margin: 0 auto;
     padding-top: 60px;
     padding-bottom: 60px;
-    width: 1600px;
-    height: 252px;
 
     background-color: var(--banner);
 }
